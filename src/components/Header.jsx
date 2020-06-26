@@ -20,10 +20,10 @@ const Header = () => {
               <Link to='/' className="nav-link">Shop Now</Link>
             </li>
             <li className="nav-item">
-              <Link to='/contact' className="nav-link">Contact</Link>
+              <Link to='contact' className="nav-link">Contact</Link>
             </li>
             <li className="nav-item">
-              <Link to='/cart' className="nav-link">View Cart ({itemsCount})</Link>
+              <Link to='cart' className="nav-link">View Cart ({itemsCount})</Link>
             </li>
           </ul>
         </div>
