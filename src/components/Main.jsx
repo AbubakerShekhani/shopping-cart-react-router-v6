@@ -9,7 +9,7 @@ const Main = ({title, description, children }) => {
   return (<>
       <Helmet>
         <title>{ title ? title + " - Abubaker's Store" : "Abubaker's Store" }</title>
-        <meta name = "description" content={ description || "Abubaker's Store" } />
+        <meta name = "description" content={ description || "Shoe Store" } />
       </Helmet>
       <Header />
 

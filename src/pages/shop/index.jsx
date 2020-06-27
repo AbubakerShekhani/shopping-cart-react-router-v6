@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from '../../components/Main'
-import ProductList from '../shop/ProductList'
+import { Outlet } from 'react-router-dom';
 
 const Shop = () => {
 
@@ -8,9 +8,9 @@ const Shop = () => {
     <Main title="Shop Now" description="Store page" >
       <div>
         <div className="text-center mt-5">
-          <h1>Fashion Store</h1>
+          <h1>Shoe Store</h1>
         </div>
-        <ProductList />
+        <Outlet />
       </div>
     </Main>
    );

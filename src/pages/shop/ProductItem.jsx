@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ShoppingCartContext } from '../../contexts/ShoppingCartContext';
 
 
@@ -19,6 +20,9 @@ const ProductItem = ({product}) => {
         src={product.imgUrl} alt=""/>
         <p>{product.name}</p>
         <h3 className="text-left">${(product.price)}</h3>
+        <div className="text">
+          <Link to={`product/${product.id}`} className="btn btn-primary btn-sm">Details</Link>
+        </div>
         <div className="text-right">
 
             {

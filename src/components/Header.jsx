@@ -1,6 +1,7 @@
 import React, {useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { ShoppingCartContext } from '../contexts/ShoppingCartContext'
+
 
 const Header = () => {
 
@@ -17,13 +18,16 @@ const Header = () => {
           <ul className="navbar-nav ">
 
             <li className="nav-item">
-              <Link to='/' className="nav-link">Shop Now</Link>
+              <Link to='/' className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to='contact' className="nav-link">Contact</Link>
+              <Link to='/shop' className="nav-link">Shop Now</Link>
             </li>
             <li className="nav-item">
-              <Link to='cart' className="nav-link">View Cart ({itemsCount})</Link>
+              <Link to='/contact' className="nav-link">Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link to='/cart' className="nav-link">View Cart ({itemsCount})</Link>
             </li>
           </ul>
         </div>
