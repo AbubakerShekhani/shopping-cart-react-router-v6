@@ -18,9 +18,8 @@ const ProductDetails = () => {
 
   useEffect(() => {
     const selectedProduct = products.find(item => item.slug === productId);
-    console.log(selectedProduct)
     setProduct(selectedProduct);
-  }, []);
+  }, [products, productId]);
 
 
   return (<div>
