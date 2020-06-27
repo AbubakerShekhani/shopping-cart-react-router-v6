@@ -20,11 +20,9 @@ const ProductItem = ({product}) => {
         src={product.imgUrl} alt=""/>
         <p>{product.name}</p>
         <h3 className="text-left">${(product.price)}</h3>
-        <div className="text">
-          <Link to={`product/${product.id}`} className="btn btn-primary btn-sm">Details</Link>
-        </div>
-        <div className="text-right">
 
+        <div className="text-right">
+        <Link to={`product/${product.slug}`} className="btn btn-danger btn-sm">Details</Link>
             {
               !itemInCart(product) &&
               <button onClick={() => addProduct(product)}
