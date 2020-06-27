@@ -6,7 +6,7 @@ import logo from '../Nike-Logo-Practice-App.png'
 const Home = () => {
 
   return (
-    <Main title="Cart" description="Shopping Cart" >
+    <Main title="Welcome to Shoe Store" description="Shoe Store Shopping Cart" >
       <div className="text-center mt-5">
         <h1>Shoe Store</h1>
       </div>
