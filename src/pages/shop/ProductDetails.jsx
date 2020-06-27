@@ -1,18 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import Main from '../../components/Main'
+import { useParams } from 'react-router-dom'
 import { ProductsContext } from '../../contexts/ProductContext'
 import { ShoppingCartContext } from '../../contexts/ShoppingCartContext';
 
 const ProductDetails = () => {
 
   const { productId } = useParams()
-  const [product, setProduct] = useState()
+  const [product, setProduct] = useState('')
   const { products } = useContext(ProductsContext)
   const { addProduct, increment, shopCartItems } = useContext(ShoppingCartContext)
-
-  console.log(productId)
-  console.log(products)
 
   const itemInCart = product => {
 
